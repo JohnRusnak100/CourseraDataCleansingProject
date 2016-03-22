@@ -23,10 +23,10 @@
           y_test(with col name of "activityid") . Do the same for the train table using the train files.
        C) Then create combined table by rbinding the test and train tables. Merge the combined table with the 
           table created form the activity_labels.txt file(col names activityid and activity) by activity id. 
-          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561           measurement variables
-       D) Extract the desired mean and std measurement variables from the combined table from c) using the grep            function separately for mean(note:lower case) and std where they both exist for a given measurement              based on variables identified in the features_info.txt file
-          Subset the combined table keeping columns 1 and 2(subjectid and activity) and using the column numbers           resulting from the two grep statements
-       E) Tidy up the variable names by removing imbedded punctuation marks such as "." and "()" and then convert           all variable names and values of activity variable to lower case so that someone doesn't have to     
+          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561 measurement variables
+       D) Extract the desired mean and std measurement variables from the combined table from c) using the grep function separately for mean(note:lower case) and std where they both exist for a given measurement based on variables identified in the features_info.txt file
+          Subset the combined table keeping columns 1 and 2(subjectid and activity) and using the column numbers resulting from the two grep statements
+       E) Tidy up the variable names by removing imbedded punctuation marks such as "." and "()" and then convert all variable names and values of activity variable to lower case so that someone doesn't have to     
           remember when abd where upper case is used
        F) Sort and group by subjectid and activity(meanandstd data table)
        G) Create a second tidy table, per assignment, by using the dplyr summarize_each function to calculate the
