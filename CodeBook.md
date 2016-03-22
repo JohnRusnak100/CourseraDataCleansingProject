@@ -41,15 +41,15 @@ Notes:
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
-   2) The project used the folowing eight(8) files:
-        A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames of the test and train data tables. For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
-        B) 'activity_labels.txt' used to link activityid number with activity for activtyid=1 equals "walking"
-        C) 'subject_train.txt' identifies the subject who performed the activity for each 7352 row sample
-        D) 'X_train.txt' the training data set file with 7352 obs of the 561 measuremnents identified in A)
-        E) 'y_train.txt' the file with the activity id's for the 7352 obs in D)
-        F) Corresponding 'subject_test.txt','X_test.txt' and 'Y_test.txt' to create the test table with 2947 obs
+       2) The project used the folowing eight(8) files:
+         A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames of the test and train data tables. For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
+         B) 'activity_labels.txt' used to link activityid number with activity for activtyid=1 equals "walking"
+         C) 'subject_train.txt' identifies the subject who performed the activity for each 7352 row sample
+         D) 'X_train.txt' the training data set file with 7352 obs of the 561 measuremnents identified in A)
+         E) 'y_train.txt' the file with the activity id's for the 7352 obs in D)
+         F) Corresponding 'subject_test.txt','X_test.txt' and 'Y_test.txt' to create the test table with 2947 obs
        
-   3)  The following recaps the varaible name and value transformations
+      3)  The following recaps the varaible name and value transformations
         A) transformed the activity variable values to make potential subsetting on this variable easier:
         
            Original values:         tidy data set :
