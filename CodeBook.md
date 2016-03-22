@@ -181,7 +181,8 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
           
        C) Then create combined table by rbinding the test and train tables. Merge the combined table with the 
           table created form the activity_labels.txt file(col names activityid and activity) by activity id. 
-          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561       measurement variables
+          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561
+          measurement variables
           Resulting table from rbinding test and traing tables,adding activityid and transforming variables  
           names(since I'm not familar with data in this field, I added more descriptive names so that I could
           better understand variables) 
