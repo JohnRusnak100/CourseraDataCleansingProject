@@ -6,7 +6,7 @@
    
 ## Section:Code Book   
    
-   1) Original UCI HAR data set contained the following files and file information:
+        1) Original UCI HAR data set contained the following files and file information:
    
    'README.txt'   
 
@@ -67,9 +67,9 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
             c) Following complete descriptive changes were made using gsub:
             
                  acc changed to accelerator      Not familar with abbreviation usage I changed to complete
-                 gyro changed to gyroscope       descriptive names so any would be able to understand
+                 gyro changed to gyroscope       descriptive names so anyone would be able to understand
                  mag changed to magnitude
-                 bodybody changed to body        looks like misname based on features_info.txt
+                 bodybody changed to body        looks like misnamed based on features_info.txt
 
              d) All measurement units remain the same from the original data set
              e) In the original UCI HAR data set – the original measurement variables were the values for a                                      single subject and activity observation from the X_test.txt and X_train.txt files. There were                                    10299 such observations.
@@ -82,7 +82,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
        -----------------------         --------------------------
        tBodyAcc-mean()-X        	        tbodyacceleratormeanx
        tBodyAcc-mean()-Y	              tbodyacceleratormeany
-       tBodyAcc-mean()-Z       	        tbodyacceleratormeanz
+       tBodyAcc-mean()-Z                 tbodyacceleratormeanz
        tGravityAcc-mean()-X    	        tgravityacceleratormeanx
        tGravityAcc-mean()-Y    	        tgravityacceleratormeany
        tGravityAcc-mean()-Z    	        tgravityacceleratormeanz
@@ -149,14 +149,14 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
             
 ## Section:Instuction List      
       
-     A R script called run_analysis.R is included in repo that does the following per project requirements:
+     An R script called run_analysis.R is included in repo that does the following per project requirements:
 
-   1) Merges the training and the test sets to create one data set.
-   2) Extracts only the measurements on the mean and standard deviation for each measurement.
-   3) Uses descriptive activity names to name the activities in the data set
-   4) Appropriately labels the data set with descriptive variable names.
-   5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each              activity and each subject. 
-      Note the 2 tidy data set are named meanandstd and meanandstdbysubjactivity
+      1) Merges the training and the test sets to create one data set.
+      2) Extracts only the measurements on the mean and standard deviation for each measurement.
+      3) Uses descriptive activity names to name the activities in the data set
+      4) Appropriately labels the data set with descriptive variable names.
+      5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+         Note the 2 tidy data set are named meanandstd and meanandstdbysubjactivity
       
      run_analysis script details with sample output as follows:
      
@@ -181,13 +181,17 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
           
        C) Then create combined table by rbinding the test and train tables. Merge the combined table with the 
           table created form the activity_labels.txt file(col names activityid and activity) by activity id. 
-          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561           measurement variables
+          Subset table by dropping out the activityid variable resulting in table with subjectid,activity and 561       measurement variables
           Resulting table from rbinding test and traing tables,adding activityid and transforming variables  
           names(since I'm not familar with data in this field, I added more descriptive names so that I could
           better understand variables) 
-       D) Extract the desired mean and std measurement variables from the combined table from c) using the grep                 function separately for mean(note:lower case) and std where they both exist for a given measurement based on variables identified in the features_info.txt file 
-          Subset the combined table keeping columns 1 and 2(subjectid and activity) and using the column numbers           resulting from the two grep statements.
-       E) Tidy up the variable names by removing imbedded punctuation marks such as "." and "()" and then convert all variable names and values of activity variable to lower case so that someone doesn't have to     
+       D) Extract the desired mean and std measurement variables from the combined table from c) using the grep  
+          function separately for mean(note:lower case) and std where they both exist for a given measurement based
+          on variables identified in the features_info.txt file 
+          Subset the combined table keeping columns 1 and 2(subjectid and activity) and using the column 
+          number resulting from the two grep statements.
+       E) Tidy up the variable names by removing imbedded punctuation marks such as "." and "()" and then convert 
+          all variable names and values of activity variable to lower case so that someone doesn't have to     
           remember when abd where upper case is used
           After steps C), D), and E) table is as follows and is tidy
           
