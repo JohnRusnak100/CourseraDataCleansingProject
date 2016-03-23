@@ -34,15 +34,17 @@ The following files are available for the train and test data. Their description
 
    'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-Notes: 
-======
+ Notes: 
+ ======
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
        2) The project used the folowing eight(8) files:
-         A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames of the test and train tables. For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
+         A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames names 
+            for the test and train data tables. 
+            For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
          B) 'activity_labels.txt' used to link activityid number with activity for activtyid=1 equals "walking"
          C) 'subject_train.txt' identifies the subject who performed the activity for each 7352 row sample
          D) 'X_train.txt' the training data set file with 7352 obs of the 561 measuremnents identified in A)
@@ -77,7 +79,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                           Recap of measurement variable name and value transformations
                                meanandstd data set                 meanandstdbysubjactivity data set
                             ---------------------------           ------------------------------------
-      measurement names      transformed as shown below             transformed as shown below
+      measurement names       transformed as shown below             transformed as shown below
 
       measurement values      same as original                       average(of original values)
 
@@ -88,20 +90,20 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                               and activity                           subjectid/activity pair
 
               
-                          Recap of variable name changes:
+                              Recap of variable name changes:
          
                  Original UCI HAR name       	Revised tidy data set name
                 -----------------------         ------- -------------------
                 tBodyAcc-mean()-X        	        tbodyacceleratormeanx
-                tBodyAcc-mean()-Y	              tbodyacceleratormeany
-                tBodyAcc-mean()-Z                 tbodyacceleratormeanz
+                tBodyAcc-mean()-Y	                tbodyacceleratormeany
+                tBodyAcc-mean()-Z                   tbodyacceleratormeanz
                 tGravityAcc-mean()-X    	        tgravityacceleratormeanx
                 tGravityAcc-mean()-Y    	        tgravityacceleratormeany
                 tGravityAcc-mean()-Z    	        tgravityacceleratormeanz
                 tBodyAccJerk-mean()-X   	        tbodyacceleratorjerkmeanx
                 tBodyAccJerk-mean()-Y   	        tbodyacceleratorjerkmeany
                 tBodyAccJerk-mean()-Z   	        tbodyacceleratorjerkmeanz
-                tBodyGyro-mean()-X      	        tbodygyroscopemeanx
+                tBodyGyro-mean()-X      	          tbodygyroscopemeanx
                 tBodyGyro-mean()-Y      	        tbodygyroscopemeany
                 tBodyGyro-mean()-Z      	        tbodygyroscopemeanz
                 tBodyGyroJerk-mean ()-X   	     tbodygyroscopejerkmeanx
