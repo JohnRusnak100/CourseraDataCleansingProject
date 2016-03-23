@@ -35,7 +35,6 @@ The following files are available for the train and test data. Their description
    'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
  Notes: 
- ======
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
@@ -73,8 +72,12 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                  mag changed to magnitude
                  bodybody changed to body        looks like misnamed based on features_info.txt
 
-             d) In the original UCI HAR data set – the original measurement variables were the values for a                                      single subject and activity observation from the X_test.txt and X_train.txt files. There were                                    10299 such observations.
-             e) For the meanandstdbysubjactivity data set the values for all of these variables is the                                           average(mean) of the values from meanandstd data set calculated for each subjectid(30) and                                       activity(6) pair resulting in 180 rows of data.
+             d) In the original UCI HAR data set – the original measurement variables were the values 
+                for a single subject and activity observation from the X_test.txt and X_train.txt files. 
+                There were 10299 such observations.
+             e) For the meanandstdbysubjactivity data set the values for all of these variables 
+                is the average of the values from meanandstd data set calculated for 
+                each subjectid(30) and activity(6) pair resulting in 180 rows of data.
                  
                           Recap of measurement variable name and value transformations
                                meanandstd data set                 meanandstdbysubjactivity data set
@@ -106,7 +109,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 tBodyGyro-mean()-X      	          tbodygyroscopemeanx
                 tBodyGyro-mean()-Y      	        tbodygyroscopemeany
                 tBodyGyro-mean()-Z      	        tbodygyroscopemeanz
-                tBodyGyroJerk-mean ()-X   	     tbodygyroscopejerkmeanx
+                tBodyGyroJerk-mean ()-X   	        tbodygyroscopejerkmeanx
                 tBodyGyroJerk-mean()-Y   	        tbodygyroscopejerkmeany
                 tBodyGyroJerk-mean()-Z  	        tbodygyroscopejerkmeanz
                 tBodyAccMag-mean()      	        tbodyacceleratormagnitudemean
@@ -124,39 +127,39 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 fBodyGyro-mean()-Y      	        fbodygyroscopemeany
                 fBodyGyro-mean()-Z      	        fbodygyroscopemeanz
                 fBodyAccMag-mean()      	        fbodyacceleratormagnitudemean
-                fBodyBodyAccJerkMag-mean()	     fbodyacceleratorjerkmagnitudemean
+                fBodyBodyAccJerkMag-mean()	        fbodyacceleratorjerkmagnitudemean
                 fBodyBodyGyroMag-mean() 	        fbodygyroscopemagnitudemean
-                fBodyBodyGyroJerkMag-mean()	     fbodygyroscopejerkmagnitudemean
+                fBodyBodyGyroJerkMag-mean()	        fbodygyroscopejerkmagnitudemean
                 tBodyAcc-std()-X	                 tbodyacceleratorstdx
                 tBodyAcc-std()-Y	                 tbodyacceleratorstdy	
                 tBodyAcc-std()-Z	                 tbodyacceleratorstdz	
-                tGravityAcc-std()-X	              tgravityacceleratorstdx	
-                tGravityAcc-std()-Y	              tgravityacceleratorstdy	
-                tGravityAcc-std()-Z	              tgravityacceleratorstdz	
-                tBodyAccJerk-std()-X	           tbodyacceleratorjerkstdx	
-                tBodyAccJerk-std()-Y	           tbodyacceleratorjerkstdy	
-                tBodyAccJerk-std()-Z	           tbodyacceleratorjerkstdz	
-                tBodyGyro-std()-X	              tbodygyroscopestdx	
-                tBodyGyro-std()-Y	              tbodygyroscopestdy	
-                tBodyGyro-std()-Z	              tbodygyroscopestdz	
-                tBodyGyroJerk-std()-X	           tbodygyroscopejerkstdx	
-                tBodyGyroJerk-std()-Y	           tbodygyroscopejerkstdy	
-                tBodyGyroJerk-std()-Z	           tbodygyroscopejerkstdz	
-                tBodyAccMag-std()	              tbodyacceleratormagnitudestd	
-                tGravityAccMag-std()	           tgravityacceleratormagnitudestd	
-                tBodyAccJerkMag-std()	           tbodyacceleratorjerkmagnitudestd	
-                tBodyGyroMag-std()	              tbodygyroscopemagnitudestd	
-                tBodyGyroJerkMag-std()	           tbodygyroscopejerkmagnitudestd	
+                tGravityAcc-std()-X	                 tgravityacceleratorstdx	
+                tGravityAcc-std()-Y	                 tgravityacceleratorstdy	
+                tGravityAcc-std()-Z	                 tgravityacceleratorstdz	
+                tBodyAccJerk-std()-X	              tbodyacceleratorjerkstdx	
+                tBodyAccJerk-std()-Y	              tbodyacceleratorjerkstdy	
+                tBodyAccJerk-std()-Z	              tbodyacceleratorjerkstdz	
+                tBodyGyro-std()-X	                tbodygyroscopestdx	
+                tBodyGyro-std()-Y	                tbodygyroscopestdy	
+                tBodyGyro-std()-Z	                tbodygyroscopestdz	
+                tBodyGyroJerk-std()-X	            tbodygyroscopejerkstdx	
+                tBodyGyroJerk-std()-Y	            tbodygyroscopejerkstdy	
+                tBodyGyroJerk-std()-Z	            tbodygyroscopejerkstdz	
+                tBodyAccMag-std()	                 tbodyacceleratormagnitudestd	
+                tGravityAccMag-std()	             tgravityacceleratormagnitudestd	
+                tBodyAccJerkMag-std()	             tbodyacceleratorjerkmagnitudestd	
+                tBodyGyroMag-std()	                 tbodygyroscopemagnitudestd	
+                tBodyGyroJerkMag-std()	             tbodygyroscopejerkmagnitudestd	
                 fBodyAcc-std()-X	                 fbodyacceleratorstdx	
                 fBodyAcc-std()-Y	                 fbodyacceleratorstdy	
                 fBodyAcc-std()-Z	                 fbodyacceleratorstdz	
-                fBodyAccJerk-std()-X	           fbodyacceleratorjerkstdx	
-                fBodyAccJerk-std()-Y	           fbodyacceleratorjerkstdy	
-                fBodyAccJerk-std()-Z	           fbodyacceleratorjerkstdz	
-                fBodyGyro-std()-X	              fbodygyroscopestdx	
+                fBodyAccJerk-std()-X	             fbodyacceleratorjerkstdx	
+                fBodyAccJerk-std()-Y	             fbodyacceleratorjerkstdy	
+                fBodyAccJerk-std()-Z	             fbodyacceleratorjerkstdz	
+                fBodyGyro-std()-X	                fbodygyroscopestdx	
                 fBodyGyro-std()-Y	              fbodygyroscopestdy	
-                fBodyGyro-std()-Z	              fbodygyroscopestdz	
-                fBodyAccMag-std()	              fbodyacceleratormagnitudestd	
+                fBodyGyro-std()-Z	               fbodygyroscopestdz	
+                fBodyAccMag-std()	                 fbodyacceleratormagnitudestd	
                 fBodyBodyAccJerkMag-std()	        fbodyacceleratorjerkmagnitudestd	
                 fBodyBodyGyroMag-std()	           fbodygyroscopemagnitudestd	
                 fBodyBodyGyroJerkMag-std()	     fbodygyroscopejerkmagnitudestd	
