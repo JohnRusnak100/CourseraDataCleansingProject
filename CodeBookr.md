@@ -95,7 +95,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
               
                               Recap of variable name changes:
          
-                 Original UCI HAR name       	Revised tidy data set name
+                 Original UCI HAR names       	Revised tidy data sets names
                 -----------------------         ------- -------------------
                 tBodyAcc-mean()-X        	        tbodyacceleratormeanx
                 tBodyAcc-mean()-Y	                tbodyacceleratormeany
@@ -130,24 +130,24 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 fBodyBodyAccJerkMag-mean()	        fbodyacceleratorjerkmagnitudemean
                 fBodyBodyGyroMag-mean() 	        fbodygyroscopemagnitudemean
                 fBodyBodyGyroJerkMag-mean()	        fbodygyroscopejerkmagnitudemean
-                tBodyAcc-std()-X	               tbodyacceleratorstdx
-                tBodyAcc-std()-Y	               tbodyacceleratorstdy	
-                tBodyAcc-std()-Z	               tbodyacceleratorstdz	
+                tBodyAcc-std()-X	                tbodyacceleratorstdx
+                tBodyAcc-std()-Y	                tbodyacceleratorstdy	
+                tBodyAcc-std()-Z	                tbodyacceleratorstdz	
                 tGravityAcc-std()-X	                tgravityacceleratorstdx	
                 tGravityAcc-std()-Y	                tgravityacceleratorstdy	
                 tGravityAcc-std()-Z	                tgravityacceleratorstdz	
-                tBodyAccJerk-std()-X	             tbodyacceleratorjerkstdx	
-                tBodyAccJerk-std()-Y	             tbodyacceleratorjerkstdy	
-                tBodyAccJerk-std()-Z	             tbodyacceleratorjerkstdz	
+                tBodyAccJerk-std()-X	            tbodyacceleratorjerkstdx	
+                tBodyAccJerk-std()-Y	            tbodyacceleratorjerkstdy	
+                tBodyAccJerk-std()-Z	            tbodyacceleratorjerkstdz	
                 tBodyGyro-std()-X	                tbodygyroscopestdx	
                 tBodyGyro-std()-Y	                tbodygyroscopestdy	
                 tBodyGyro-std()-Z	                tbodygyroscopestdz	
                 tBodyGyroJerk-std()-X	            tbodygyroscopejerkstdx	
                 tBodyGyroJerk-std()-Y	            tbodygyroscopejerkstdy	
                 tBodyGyroJerk-std()-Z	            tbodygyroscopejerkstdz	
-                tBodyAccMag-std()	                 tbodyacceleratormagnitudestd	
+                tBodyAccMag-std()	                tbodyacceleratormagnitudestd	
                 tGravityAccMag-std()	            tgravityacceleratormagnitudestd	
-                tBodyAccJerkMag-std()	             tbodyacceleratorjerkmagnitudestd	
+                tBodyAccJerkMag-std()	            tbodyacceleratorjerkmagnitudestd	
                 tBodyGyroMag-std()	                tbodygyroscopemagnitudestd	
                 tBodyGyroJerkMag-std()	            tbodygyroscopejerkmagnitudestd	
                 fBodyAcc-std()-X	                fbodyacceleratorstdx	
@@ -159,10 +159,10 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 fBodyGyro-std()-X	                fbodygyroscopestdx	
                 fBodyGyro-std()-Y	                fbodygyroscopestdy	
                 fBodyGyro-std()-Z	                fbodygyroscopestdz	
-                fBodyAccMag-std()	                 fbodyacceleratormagnitudestd	
+                fBodyAccMag-std()	                fbodyacceleratormagnitudestd	
                 fBodyBodyAccJerkMag-std()	        fbodyacceleratorjerkmagnitudestd	
-                fBodyBodyGyroMag-std()	          fbodygyroscopemagnitudestd	
-                fBodyBodyGyroJerkMag-std()	      fbodygyroscopejerkmagnitudestd	
+                fBodyBodyGyroMag-std()	            fbodygyroscopemagnitudestd	
+                fBodyBodyGyroJerkMag-std()	        fbodygyroscopejerkmagnitudestd	
             
 ## Section:Instuction List      
       
