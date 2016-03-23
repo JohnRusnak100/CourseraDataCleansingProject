@@ -42,7 +42,7 @@ Notes:
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
        2) The project used the folowing eight(8) files:
-         A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames of the test and train data tables. For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
+         A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames of the test and train tables. For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
          B) 'activity_labels.txt' used to link activityid number with activity for activtyid=1 equals "walking"
          C) 'subject_train.txt' identifies the subject who performed the activity for each 7352 row sample
          D) 'X_train.txt' the training data set file with 7352 obs of the 561 measuremnents identified in A)
@@ -77,7 +77,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                           Recap of measurement variable name and value transformations
                                meanandstd data set                 meanandstdbysubjactivity data set
                             ---------------------------           ------------------------------------
-       measurement names      transformed as shown below             transformed as shown below
+      measurement names      transformed as shown below             transformed as shown below
 
       measurement values      same as original                       average(of original values)
 
@@ -88,76 +88,76 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                               and activity                           subjectid/activity pair
 
               
-              Resulting in following variable name changes:
+                          Recap of variable name changes:
          
-        Original UCI HAR name       	Revised tidy data set name
-       -----------------------         --------------------------
-       tBodyAcc-mean()-X        	        tbodyacceleratormeanx
-       tBodyAcc-mean()-Y	              tbodyacceleratormeany
-       tBodyAcc-mean()-Z                 tbodyacceleratormeanz
-       tGravityAcc-mean()-X    	        tgravityacceleratormeanx
-       tGravityAcc-mean()-Y    	        tgravityacceleratormeany
-       tGravityAcc-mean()-Z    	        tgravityacceleratormeanz
-       tBodyAccJerk-mean()-X   	        tbodyacceleratorjerkmeanx
-       tBodyAccJerk-mean()-Y   	        tbodyacceleratorjerkmeany
-       tBodyAccJerk-mean()-Z   	        tbodyacceleratorjerkmeanz
-       tBodyGyro-mean()-X      	        tbodygyroscopemeanx
-       tBodyGyro-mean()-Y      	        tbodygyroscopemeany
-       tBodyGyro-mean()-Z      	        tbodygyroscopemeanz
-       tBodyGyroJerk-mean ()-X   	     tbodygyroscopejerkmeanx
-       tBodyGyroJerk-mean()-Y   	        tbodygyroscopejerkmeany
-       tBodyGyroJerk-mean()-Z  	        tbodygyroscopejerkmeanz
-       tBodyAccMag-mean()      	        tbodyacceleratormagnitudemean
-       tGravityAccMag-mean()    	        tgravityacceleratormagnitudemean
-       tBodyAccJerkMag-mean()  	        tbodyacceleratorjerkmagnitudemean
-       tBodyGyroMag-mean()     	        tbodygyroscopemagnitudemean
-       tBodyGyroJerkMag-mean() 	        tbodygyroscopejerkmagnitudemean
-       fBodyAcc-mean()-X       	        tbodyacceleratormeanx
-       fBodyAcc-mean()-Y       	        tbodyacceleratormeany
-       fBodyAcc-mean()-Z       	        tbodyacceleratormeanz
-       fBodyAccJerk-mean()-X   	        fbodyacceleratorjerkmeanx
-       fBodyAccJerk-mean()-Y   	        fbodyacceleratorjerkmeany
-       fBodyAccJerk-mean()-Z   	        fbodyacceleratorjerkmeanz
-       fBodyGyro-mean()-X      	        fbodygyroscopemeanx
-       fBodyGyro-mean()-Y      	        fbodygyroscopemeany
-       fBodyGyro-mean()-Z      	        fbodygyroscopemeanz
-       fBodyAccMag-mean()      	        fbodyacceleratormagnitudemean
-       fBodyBodyAccJerkMag-mean()	     fbodyacceleratorjerkmagnitudemean
-       fBodyBodyGyroMag-mean() 	        fbodygyroscopemagnitudemean
-       fBodyBodyGyroJerkMag-mean()	     fbodygyroscopejerkmagnitudemean
-       tBodyAcc-std()-X	                 tbodyacceleratorstdx
-       tBodyAcc-std()-Y	                 tbodyacceleratorstdy	
-       tBodyAcc-std()-Z	                 tbodyacceleratorstdz	
-       tGravityAcc-std()-X	              tgravityacceleratorstdx	
-       tGravityAcc-std()-Y	              tgravityacceleratorstdy	
-       tGravityAcc-std()-Z	              tgravityacceleratorstdz	
-       tBodyAccJerk-std()-X	           tbodyacceleratorjerkstdx	
-       tBodyAccJerk-std()-Y	           tbodyacceleratorjerkstdy	
-       tBodyAccJerk-std()-Z	           tbodyacceleratorjerkstdz	
-       tBodyGyro-std()-X	              tbodygyroscopestdx	
-       tBodyGyro-std()-Y	              tbodygyroscopestdy	
-       tBodyGyro-std()-Z	              tbodygyroscopestdz	
-       tBodyGyroJerk-std()-X	           tbodygyroscopejerkstdx	
-       tBodyGyroJerk-std()-Y	           tbodygyroscopejerkstdy	
-       tBodyGyroJerk-std()-Z	           tbodygyroscopejerkstdz	
-       tBodyAccMag-std()	              tbodyacceleratormagnitudestd	
-       tGravityAccMag-std()	           tgravityacceleratormagnitudestd	
-       tBodyAccJerkMag-std()	           tbodyacceleratorjerkmagnitudestd	
-       tBodyGyroMag-std()	              tbodygyroscopemagnitudestd	
-       tBodyGyroJerkMag-std()	           tbodygyroscopejerkmagnitudestd	
-       fBodyAcc-std()-X	                 fbodyacceleratorstdx	
-       fBodyAcc-std()-Y	                 fbodyacceleratorstdy	
-       fBodyAcc-std()-Z	                 fbodyacceleratorstdz	
-       fBodyAccJerk-std()-X	           fbodyacceleratorjerkstdx	
-       fBodyAccJerk-std()-Y	           fbodyacceleratorjerkstdy	
-       fBodyAccJerk-std()-Z	           fbodyacceleratorjerkstdz	
-       fBodyGyro-std()-X	              fbodygyroscopestdx	
-       fBodyGyro-std()-Y	              fbodygyroscopestdy	
-       fBodyGyro-std()-Z	              fbodygyroscopestdz	
-       fBodyAccMag-std()	              fbodyacceleratormagnitudestd	
-       fBodyBodyAccJerkMag-std()	        fbodyacceleratorjerkmagnitudestd	
-       fBodyBodyGyroMag-std()	           fbodygyroscopemagnitudestd	
-       fBodyBodyGyroJerkMag-std()	     fbodygyroscopejerkmagnitudestd	
+                 Original UCI HAR name       	Revised tidy data set name
+                -----------------------         ------- -------------------
+                tBodyAcc-mean()-X        	        tbodyacceleratormeanx
+                tBodyAcc-mean()-Y	              tbodyacceleratormeany
+                tBodyAcc-mean()-Z                 tbodyacceleratormeanz
+                tGravityAcc-mean()-X    	        tgravityacceleratormeanx
+                tGravityAcc-mean()-Y    	        tgravityacceleratormeany
+                tGravityAcc-mean()-Z    	        tgravityacceleratormeanz
+                tBodyAccJerk-mean()-X   	        tbodyacceleratorjerkmeanx
+                tBodyAccJerk-mean()-Y   	        tbodyacceleratorjerkmeany
+                tBodyAccJerk-mean()-Z   	        tbodyacceleratorjerkmeanz
+                tBodyGyro-mean()-X      	        tbodygyroscopemeanx
+                tBodyGyro-mean()-Y      	        tbodygyroscopemeany
+                tBodyGyro-mean()-Z      	        tbodygyroscopemeanz
+                tBodyGyroJerk-mean ()-X   	     tbodygyroscopejerkmeanx
+                tBodyGyroJerk-mean()-Y   	        tbodygyroscopejerkmeany
+                tBodyGyroJerk-mean()-Z  	        tbodygyroscopejerkmeanz
+                tBodyAccMag-mean()      	        tbodyacceleratormagnitudemean
+                tGravityAccMag-mean()    	        tgravityacceleratormagnitudemean
+                tBodyAccJerkMag-mean()  	        tbodyacceleratorjerkmagnitudemean
+                tBodyGyroMag-mean()     	        tbodygyroscopemagnitudemean
+                tBodyGyroJerkMag-mean() 	        tbodygyroscopejerkmagnitudemean
+                fBodyAcc-mean()-X       	        tbodyacceleratormeanx
+                fBodyAcc-mean()-Y       	        tbodyacceleratormeany
+                fBodyAcc-mean()-Z       	        tbodyacceleratormeanz
+                fBodyAccJerk-mean()-X   	        fbodyacceleratorjerkmeanx
+                fBodyAccJerk-mean()-Y   	        fbodyacceleratorjerkmeany
+                fBodyAccJerk-mean()-Z   	        fbodyacceleratorjerkmeanz
+                fBodyGyro-mean()-X      	        fbodygyroscopemeanx
+                fBodyGyro-mean()-Y      	        fbodygyroscopemeany
+                fBodyGyro-mean()-Z      	        fbodygyroscopemeanz
+                fBodyAccMag-mean()      	        fbodyacceleratormagnitudemean
+                fBodyBodyAccJerkMag-mean()	     fbodyacceleratorjerkmagnitudemean
+                fBodyBodyGyroMag-mean() 	        fbodygyroscopemagnitudemean
+                fBodyBodyGyroJerkMag-mean()	     fbodygyroscopejerkmagnitudemean
+                tBodyAcc-std()-X	                 tbodyacceleratorstdx
+                tBodyAcc-std()-Y	                 tbodyacceleratorstdy	
+                tBodyAcc-std()-Z	                 tbodyacceleratorstdz	
+                tGravityAcc-std()-X	              tgravityacceleratorstdx	
+                tGravityAcc-std()-Y	              tgravityacceleratorstdy	
+                tGravityAcc-std()-Z	              tgravityacceleratorstdz	
+                tBodyAccJerk-std()-X	           tbodyacceleratorjerkstdx	
+                tBodyAccJerk-std()-Y	           tbodyacceleratorjerkstdy	
+                tBodyAccJerk-std()-Z	           tbodyacceleratorjerkstdz	
+                tBodyGyro-std()-X	              tbodygyroscopestdx	
+                tBodyGyro-std()-Y	              tbodygyroscopestdy	
+                tBodyGyro-std()-Z	              tbodygyroscopestdz	
+                tBodyGyroJerk-std()-X	           tbodygyroscopejerkstdx	
+                tBodyGyroJerk-std()-Y	           tbodygyroscopejerkstdy	
+                tBodyGyroJerk-std()-Z	           tbodygyroscopejerkstdz	
+                tBodyAccMag-std()	              tbodyacceleratormagnitudestd	
+                tGravityAccMag-std()	           tgravityacceleratormagnitudestd	
+                tBodyAccJerkMag-std()	           tbodyacceleratorjerkmagnitudestd	
+                tBodyGyroMag-std()	              tbodygyroscopemagnitudestd	
+                tBodyGyroJerkMag-std()	           tbodygyroscopejerkmagnitudestd	
+                fBodyAcc-std()-X	                 fbodyacceleratorstdx	
+                fBodyAcc-std()-Y	                 fbodyacceleratorstdy	
+                fBodyAcc-std()-Z	                 fbodyacceleratorstdz	
+                fBodyAccJerk-std()-X	           fbodyacceleratorjerkstdx	
+                fBodyAccJerk-std()-Y	           fbodyacceleratorjerkstdy	
+                fBodyAccJerk-std()-Z	           fbodyacceleratorjerkstdz	
+                fBodyGyro-std()-X	              fbodygyroscopestdx	
+                fBodyGyro-std()-Y	              fbodygyroscopestdy	
+                fBodyGyro-std()-Z	              fbodygyroscopestdz	
+                fBodyAccMag-std()	              fbodyacceleratormagnitudestd	
+                fBodyBodyAccJerkMag-std()	        fbodyacceleratorjerkmagnitudestd	
+                fBodyBodyGyroMag-std()	           fbodygyroscopemagnitudestd	
+                fBodyBodyGyroJerkMag-std()	     fbodygyroscopejerkmagnitudestd	
             
 ## Section:Instuction List      
       
