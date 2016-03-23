@@ -106,7 +106,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 tBodyAccJerk-mean()-X   	        tbodyacceleratorjerkmeanx
                 tBodyAccJerk-mean()-Y   	        tbodyacceleratorjerkmeany
                 tBodyAccJerk-mean()-Z   	        tbodyacceleratorjerkmeanz
-                tBodyGyro-mean()-X      	          tbodygyroscopemeanx
+                tBodyGyro-mean()-X      	        tbodygyroscopemeanx
                 tBodyGyro-mean()-Y      	        tbodygyroscopemeany
                 tBodyGyro-mean()-Z      	        tbodygyroscopemeanz
                 tBodyGyroJerk-mean ()-X   	        tbodygyroscopejerkmeanx
@@ -130,15 +130,15 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 fBodyBodyAccJerkMag-mean()	        fbodyacceleratorjerkmagnitudemean
                 fBodyBodyGyroMag-mean() 	        fbodygyroscopemagnitudemean
                 fBodyBodyGyroJerkMag-mean()	        fbodygyroscopejerkmagnitudemean
-                tBodyAcc-std()-X	                 tbodyacceleratorstdx
-                tBodyAcc-std()-Y	                 tbodyacceleratorstdy	
-                tBodyAcc-std()-Z	                 tbodyacceleratorstdz	
-                tGravityAcc-std()-X	                 tgravityacceleratorstdx	
-                tGravityAcc-std()-Y	                 tgravityacceleratorstdy	
-                tGravityAcc-std()-Z	                 tgravityacceleratorstdz	
-                tBodyAccJerk-std()-X	              tbodyacceleratorjerkstdx	
-                tBodyAccJerk-std()-Y	              tbodyacceleratorjerkstdy	
-                tBodyAccJerk-std()-Z	              tbodyacceleratorjerkstdz	
+                tBodyAcc-std()-X	               tbodyacceleratorstdx
+                tBodyAcc-std()-Y	               tbodyacceleratorstdy	
+                tBodyAcc-std()-Z	               tbodyacceleratorstdz	
+                tGravityAcc-std()-X	                tgravityacceleratorstdx	
+                tGravityAcc-std()-Y	                tgravityacceleratorstdy	
+                tGravityAcc-std()-Z	                tgravityacceleratorstdz	
+                tBodyAccJerk-std()-X	             tbodyacceleratorjerkstdx	
+                tBodyAccJerk-std()-Y	             tbodyacceleratorjerkstdy	
+                tBodyAccJerk-std()-Z	             tbodyacceleratorjerkstdz	
                 tBodyGyro-std()-X	                tbodygyroscopestdx	
                 tBodyGyro-std()-Y	                tbodygyroscopestdy	
                 tBodyGyro-std()-Z	                tbodygyroscopestdz	
@@ -146,23 +146,23 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
                 tBodyGyroJerk-std()-Y	            tbodygyroscopejerkstdy	
                 tBodyGyroJerk-std()-Z	            tbodygyroscopejerkstdz	
                 tBodyAccMag-std()	                 tbodyacceleratormagnitudestd	
-                tGravityAccMag-std()	             tgravityacceleratormagnitudestd	
+                tGravityAccMag-std()	            tgravityacceleratormagnitudestd	
                 tBodyAccJerkMag-std()	             tbodyacceleratorjerkmagnitudestd	
-                tBodyGyroMag-std()	                 tbodygyroscopemagnitudestd	
-                tBodyGyroJerkMag-std()	             tbodygyroscopejerkmagnitudestd	
-                fBodyAcc-std()-X	                 fbodyacceleratorstdx	
-                fBodyAcc-std()-Y	                 fbodyacceleratorstdy	
-                fBodyAcc-std()-Z	                 fbodyacceleratorstdz	
-                fBodyAccJerk-std()-X	             fbodyacceleratorjerkstdx	
-                fBodyAccJerk-std()-Y	             fbodyacceleratorjerkstdy	
-                fBodyAccJerk-std()-Z	             fbodyacceleratorjerkstdz	
+                tBodyGyroMag-std()	                tbodygyroscopemagnitudestd	
+                tBodyGyroJerkMag-std()	            tbodygyroscopejerkmagnitudestd	
+                fBodyAcc-std()-X	                fbodyacceleratorstdx	
+                fBodyAcc-std()-Y	                fbodyacceleratorstdy	
+                fBodyAcc-std()-Z	                fbodyacceleratorstdz	
+                fBodyAccJerk-std()-X	            fbodyacceleratorjerkstdx	
+                fBodyAccJerk-std()-Y	            fbodyacceleratorjerkstdy	
+                fBodyAccJerk-std()-Z	            fbodyacceleratorjerkstdz	
                 fBodyGyro-std()-X	                fbodygyroscopestdx	
-                fBodyGyro-std()-Y	              fbodygyroscopestdy	
-                fBodyGyro-std()-Z	               fbodygyroscopestdz	
+                fBodyGyro-std()-Y	                fbodygyroscopestdy	
+                fBodyGyro-std()-Z	                fbodygyroscopestdz	
                 fBodyAccMag-std()	                 fbodyacceleratormagnitudestd	
                 fBodyBodyAccJerkMag-std()	        fbodyacceleratorjerkmagnitudestd	
-                fBodyBodyGyroMag-std()	           fbodygyroscopemagnitudestd	
-                fBodyBodyGyroJerkMag-std()	     fbodygyroscopejerkmagnitudestd	
+                fBodyBodyGyroMag-std()	          fbodygyroscopemagnitudestd	
+                fBodyBodyGyroJerkMag-std()	      fbodygyroscopejerkmagnitudestd	
             
 ## Section:Instuction List      
       
@@ -175,7 +175,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
       5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
          Note the 2 tidy data set are named meanandstd and meanandstdbysubjactivity
       
-     run_analysis script details with sample output as follows:
+                         run_analysis script details with sample output as follows:
      
        A) Read in the following 8 files from the downloaded UCI HAR data set unzipped on 3/15/2016:
           activity_labels.txt,features.txt,X_test.txt,X_train.txt,Y_test.txt,Y_train.txt,subject_test.txt
