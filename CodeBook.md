@@ -52,7 +52,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
          F) Corresponding 'subject_test.txt','X_test.txt' and 'Y_test.txt' to create the test table with 2947 obs
        
       3)  The following recaps the varaible name and value transformations
-        A) transformed the activity variable values to make potential subsetting on this variable easier:
+        A) transformed the activity values to make potential subsetting on this variable easier:
         
            Original values:         tidy data set :
            -------------------     -------------------
