@@ -44,7 +44,8 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
          A) 'features.txt' = file with the 561 variable names. This file was used to set the colnames names 
             for the test and train data tables. 
             For example measurement variable # 1 has name="tBodyAcc-mean()-X" not very tidy
-         B) 'activity_labels.txt' used to link activityid number with activity for activtyid=1 equals "walking"
+         B) 'activity_labels.txt' used to link activityid number with activity
+             for example activtyid=1 equals "walking"
          C) 'subject_train.txt' identifies the subject who performed the activity for each 7352 row sample
          D) 'X_train.txt' the training data set file with 7352 obs of the 561 measuremnents identified in A)
          E) 'y_train.txt' the file with the activity id's for the 7352 obs in D)
