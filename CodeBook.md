@@ -2,7 +2,7 @@
 
 # This CodeBook is for the Coursera Data Cleansing Course final project
 
-   The CodeBook will document the structure of the original data UCI HAR data set( URL in README.md),transformations performed on the data, creation,subsetting and grouping of the data to generate the two(2) required tidt data sets for the course project.
+   The CodeBook will document the structure of the original data UCI HAR data set( URL in README.md),transformations performed on the data, creation,subsetting and grouping of the data to generate the two(2) required tidy data sets for the course project.
    
 ## Section:Code Book   
    
