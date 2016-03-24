@@ -98,6 +98,8 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
          
                  Original UCI HAR names       	Revised tidy data sets names
                 -----------------------         ------- -------------------
+                did not exist                       subjectid
+                did not exist                       activity
                 tBodyAcc-mean()-X        	        tbodyacceleratormeanx
                 tBodyAcc-mean()-Y	                tbodyacceleratormeany
                 tBodyAcc-mean()-Z                   tbodyacceleratormeanz
